@@ -16,3 +16,4 @@ To add the Client ID and Client Secret to the App, follow these steps:
 2. Select `Freetime` and click `Edit...`
 3. Go to `Run` > `Arguments`
 4. Add your Client ID (`GITHUB_CLIENT_ID` as key) and Client Secret (`GITHUB_CLIENT_SECRET`) to the Environment Variables.
+5. Add your AppSpector API Key (`APPSPECTOR_API_KEY` as key) to the Environment Variables as well.
