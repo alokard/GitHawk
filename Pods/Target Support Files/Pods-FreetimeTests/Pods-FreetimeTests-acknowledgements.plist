@@ -103,6 +103,17 @@ SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>All your base are belong to us!
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>AppSpectorSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>MIT License
 
 Copyright (c) 2018 UI At Six

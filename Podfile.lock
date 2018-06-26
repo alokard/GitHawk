@@ -5,6 +5,7 @@ PODS:
   - Apollo (0.8.0):
     - Apollo/Core (= 0.8.0)
   - Apollo/Core (0.8.0)
+  - AppSpectorSDK (0.5.1)
   - AutoInsetter (1.2.3)
   - cmark-gfm-swift (0.1.0)
   - ContextMenu (0.1.0)
@@ -26,10 +27,10 @@ PODS:
   - FirebaseAnalytics (4.2.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
   - FirebaseCore (4.0.20):
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseDatabase (4.1.5):
     - FirebaseAnalytics (~> 4.1)
     - FirebaseCore (~> 4.0)
@@ -44,7 +45,7 @@ PODS:
     - Apollo (~> 0.8.0)
   - GitHubSession (0.1.0)
   - GoogleToolboxForMac/Defines (2.1.4)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+  - GoogleToolboxForMac/NSData+zlib (2.1.4):
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - Highlightr (1.1.0)
   - HTMLString (4.0.1)
@@ -84,6 +85,7 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireNetworkActivityIndicator (~> 2.1)
+  - AppSpectorSDK
   - cmark-gfm-swift (from `https://github.com/GitHawkApp/cmark-gfm-swift.git`, branch `master`)
   - ContextMenu (from `https://github.com/GitHawkApp/ContextMenu.git`, branch `master`)
   - Crashlytics
@@ -109,34 +111,6 @@ DEPENDENCIES:
   - SwipeCellKit (from `Local Pods/SwipeCellKit`)
   - Tabman (~> 1.8)
   - TUSafariActivity (~> 1.0.0)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Alamofire
-    - AlamofireNetworkActivityIndicator
-    - Apollo
-    - AutoInsetter
-    - Crashlytics
-    - Fabric
-    - FBSnapshotTestCase
-    - Firebase
-    - FirebaseAnalytics
-    - FirebaseCore
-    - FirebaseDatabase
-    - FirebaseInstanceID
-    - FLAnimatedImage
-    - FLEX
-    - GoogleToolboxForMac
-    - HTMLString
-    - leveldb-library
-    - nanopb
-    - NYTPhotoViewer
-    - Pageboy
-    - SDWebImage
-    - SnapKit
-    - SwiftLint
-    - Tabman
-    - TUSafariActivity
 
 EXTERNAL SOURCES:
   cmark-gfm-swift:
@@ -198,6 +172,7 @@ SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   AlamofireNetworkActivityIndicator: 4716f6554bdfb9c7cf13b1e0e3af21163129690a
   Apollo: 66e0f52289551545adb7ecdd994e713fdbae26eb
+  AppSpectorSDK: 4bbe54d5f293954476fef1b18dafbdfbfb3e5c2e
   AutoInsetter: 1a8f8ad5e7da8e993970b3809cfb8e8e330f4db1
   cmark-gfm-swift: 8f7ffcd7d4ef6c0eeae5515c724fcde620e1028e
   ContextMenu: c9a4b218acc1a5f23bd1857e65d15658582f2a33
@@ -233,6 +208,6 @@ SPEC CHECKSUMS:
   Tabman: 69ce69b44cec1ad693b82c24cdbdf0c45915668c
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
 
-PODFILE CHECKSUM: 205c8037a613740f86b4134cb10e30477c54e3e9
+PODFILE CHECKSUM: 98d082ac2e34236f3a93c291800725b8fa660d72
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.4.0

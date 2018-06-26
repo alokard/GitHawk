@@ -13,6 +13,7 @@ import Fabric
 import Crashlytics
 import Firebase
 import GitHubSession
+import AppSpectorSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,6 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        let config = AppSpectorConfig(apiKey: Secrets.AppSpector.apiKey,
+                                      monitorIDs: [AS_HTTP_MONITOR, AS_LOG_MONITOR])
+        AppSpector.run(with: config)
+        
         sessionManager.addListener(listener: self)
 
         let focusedSession = sessionManager.focusedUserSession

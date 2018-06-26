@@ -7,6 +7,9 @@ body: Copyright (c) 2016 A…
 name: Apollo, nameSpecified: 
 body: The MIT License (MIT…
 
+name: AppSpectorSDK, nameSpecified: 
+body: All your base are be…
+
 name: AutoInsetter, nameSpecified: 
 body: MIT License
 
@@ -120,6 +123,9 @@ body: Copyright (c) 2016 A…
 
 name: Apollo, nameSpecified: 
 body: The MIT License (MIT…
+
+name: AppSpectorSDK, nameSpecified: 
+body: All your base are be…
 
 name: AutoInsetter, nameSpecified: 
 body: MIT License

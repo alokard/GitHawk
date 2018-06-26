@@ -14,6 +14,11 @@ enum Secrets {
         static let githubId = "{GITHUBID}"
         static let githubSecret = "{GITHUBSECRET}"
         static let imgurId = "{IMGURID}"
+        static let appspectorKey = "{APPSPECTOR_API_KEY}"
+    }
+    
+    enum AppSpector {
+        static let apiKey = Secrets.environmentVariable(named: "APPSPECTOR_API_KEY") ?? CI.appspectorKey
     }
     
     enum GitHub {

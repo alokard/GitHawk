@@ -72,6 +72,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+## AppSpectorSDK
+
+All your base are belong to us!
+
+
 ## AutoInsetter
 
 MIT License

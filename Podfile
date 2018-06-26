@@ -36,6 +36,7 @@ def testing_pods
 
   # debugging pods
   pod 'FLEX', '~> 2.0', :configurations => ['Debug', 'TestFlight']
+  pod 'AppSpectorSDK'
 
   # Local Pods w/ custom changes
   pod 'SwipeCellKit', :path => 'Local Pods/SwipeCellKit'

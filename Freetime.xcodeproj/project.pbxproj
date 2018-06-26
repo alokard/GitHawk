@@ -234,7 +234,6 @@
 		297B062A1FB9239E0026FA23 /* IGListCollectionViewLayout+GitHawk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297B06291FB9239E0026FA23 /* IGListCollectionViewLayout+GitHawk.swift */; };
 		297B062C1FB92DCA0026FA23 /* UICollectionViewLayout+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297B062B1FB92DCA0026FA23 /* UICollectionViewLayout+Orientation.swift */; };
 		297DD5E11F061BBE006E7E63 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297DD5E01F061BBE006E7E63 /* CreateProfileViewController.swift */; };
-		297DD5E31F06922A006E7E63 /* NotificationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297DD5E21F06922A006E7E63 /* NotificationClient.swift */; };
 		297EC91D20C4765000B6E42C /* MilestoneSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297EC91C20C4765000B6E42C /* MilestoneSectionController.swift */; };
 		297EC91F20C4768600B6E42C /* MilestoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297EC91E20C4768600B6E42C /* MilestoneViewModel.swift */; };
 		297FB7781F51128A00F2E618 /* SettingsAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297FB7771F51128A00F2E618 /* SettingsAccountsViewController.swift */; };
@@ -737,7 +736,6 @@
 		297B06291FB9239E0026FA23 /* IGListCollectionViewLayout+GitHawk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IGListCollectionViewLayout+GitHawk.swift"; sourceTree = "<group>"; };
 		297B062B1FB92DCA0026FA23 /* UICollectionViewLayout+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayout+Orientation.swift"; sourceTree = "<group>"; };
 		297DD5E01F061BBE006E7E63 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
-		297DD5E21F06922A006E7E63 /* NotificationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationClient.swift; sourceTree = "<group>"; };
 		297EC91C20C4765000B6E42C /* MilestoneSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneSectionController.swift; sourceTree = "<group>"; };
 		297EC91E20C4768600B6E42C /* MilestoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneViewModel.swift; sourceTree = "<group>"; };
 		297FB7771F51128A00F2E618 /* SettingsAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAccountsViewController.swift; sourceTree = "<group>"; };
@@ -2084,6 +2082,7 @@
 				294EE4B7209006BF002C9CB1 /* Resources */,
 				294EE4DD209006C3002C9CB1 /* Embed App Extensions */,
 				3AEFFF6C72A37C3F4C5C9423 /* Frameworks */,
+				E500589051FB54ED3943620E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2104,6 +2103,7 @@
 				294EE4C2209006C2002C9CB1 /* Frameworks */,
 				294EE4C3209006C2002C9CB1 /* Resources */,
 				D97459BBC895C9C6632BE028 /* [CP] Embed Pods Frameworks */,
+				038DF19317C7CD73A7FFEA3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2128,6 +2128,7 @@
 				295B51391FC2342200C3993B /* Run Fabric */,
 				ABA015066A84600AF351C942 /* [CP] Embed Pods Frameworks */,
 				294EE4DF209006C3002C9CB1 /* Embed Watch Content */,
+				DA6F7150497E3A27F955665B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2148,6 +2149,7 @@
 				297AE8451EC0D58A00B44A1F /* Frameworks */,
 				297AE8461EC0D58A00B44A1F /* Resources */,
 				F46376DA96978B72BF162CA2 /* [CP] Embed Pods Frameworks */,
+				3E0369D87AA50B0E5E8D00F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2281,6 +2283,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		038DF19317C7CD73A7FFEA3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreetimeWatch Extension/Pods-FreetimeWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		292FCB261EE050F60026635E /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2325,6 +2342,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E0369D87AA50B0E5E8D00F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreetimeTests/Pods-FreetimeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8244BB367A339B5CDC740C40 /* [CP] Check Pods Manifest.lock */ = {
@@ -2375,7 +2407,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FAILED=false\n\nif [ -z \"${BUDDYBUILD_BUILD_NUMBER}\" ]; then\n  echo \"Script is not being run on CI\"\n  exit 0\nfi\n\nif [ -z \"${GITHUB_CLIENT_ID}\" ]; then\n  echo \"${SRCROOT}/Classes/Systems/Secrets.swift:14:1: warning: Missing GitHub Client ID\"\n  FAILED=true\nfi\n\nif [ -z \"${GITHUB_CLIENT_SECRET}\" ]; then\n  echo \"${SRCROOT}/Classes/Systems/Secrets.swift:15:1: warning: Missing GitHub Client Secret\"\n  FAILED=true\nfi\n\nif [ -z \"${IMGUR_CLIENT_ID}\" ]; then\n  echo \"${SRCROOT}/Classes/Systems/Secrets.swift:16:1: warning: Missing Imgur Client ID\"\n  FAILED=true\nfi\n\nsed -i \".tmp\" \"s|{GITHUBID}|${GITHUB_CLIENT_ID}|g; s|{GITHUBSECRET}|${GITHUB_CLIENT_SECRET}|g; s|{IMGURID}|${IMGUR_CLIENT_ID}|g\" \"${SRCROOT}/Classes/Systems/Secrets.swift\"\n\nif [ \"$FAILED\" = true ]; then\n  exit 1\nfi\n\necho \"All env values found!\"";
+			shellScript = "FAILED=false\n\nif [ -z \"${BUDDYBUILD_BUILD_NUMBER}\" ]; then\n  echo \"Script is not being run on CI\"\n  exit 0\nfi\n\nif [ -z \"${GITHUB_CLIENT_ID}\" ]; then\n  echo \"${SRCROOT}/Classes/Systems/Secrets.swift:14:1: warning: Missing GitHub Client ID\"\n  FAILED=true\nfi\n\nif [ -z \"${GITHUB_CLIENT_SECRET}\" ]; then\n  echo \"${SRCROOT}/Classes/Systems/Secrets.swift:15:1: warning: Missing GitHub Client Secret\"\n  FAILED=true\nfi\n\nif [ -z \"${IMGUR_CLIENT_ID}\" ]; then\n  echo \"${SRCROOT}/Classes/Systems/Secrets.swift:16:1: warning: Missing Imgur Client ID\"\n  FAILED=true\nfi\n\nsed -i \".tmp\" \"s|{GITHUBID}|${GITHUB_CLIENT_ID}|g; s|{GITHUBSECRET}|${GITHUB_CLIENT_SECRET}|g; s|{IMGURID}|${IMGUR_CLIENT_ID}|g\" \"${SRCROOT}/Classes/Systems/Secrets.swift\"\n\nif [ \"$FAILED\" = true ]; then\n  exit 1\nfi\n\necho \"All env values found!\"\n";
 		};
 		ABA015066A84600AF351C942 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2387,6 +2419,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/Apollo-iOS/Apollo.framework",
+				"${PODS_ROOT}/AppSpectorSDK/AppSpectorSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/AutoInsetter/AutoInsetter.framework",
 				"${BUILT_PRODUCTS_DIR}/ContextMenu/ContextMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/DateAgo-iOS/DateAgo.framework",
@@ -2418,6 +2451,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppSpectorSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AutoInsetter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ContextMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateAgo.framework",
@@ -2495,6 +2529,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreetimeWatch Extension/Pods-FreetimeWatch Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DA6F7150497E3A27F955665B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Freetime/Pods-Freetime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DCF1A6481F9E3E1F00A7A4A0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2509,6 +2558,21 @@
 			shellPath = /bin/sh;
 			shellScript = "#\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
+		E500589051FB54ED3943620E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreetimeWatch/Pods-FreetimeWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F46376DA96978B72BF162CA2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2519,6 +2583,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/Apollo-iOS/Apollo.framework",
+				"${PODS_ROOT}/AppSpectorSDK/AppSpectorSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/AutoInsetter/AutoInsetter.framework",
 				"${BUILT_PRODUCTS_DIR}/ContextMenu/ContextMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/DateAgo-iOS/DateAgo.framework",
@@ -2551,6 +2616,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppSpectorSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AutoInsetter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ContextMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateAgo.framework",
@@ -2824,7 +2890,6 @@
 				29C8F9B5208C081D0075931C /* LabelSectionController.swift in Sources */,
 				29136BE3200AAA5A007317BE /* UIViewController+FilePathTitle.swift in Sources */,
 				29B5D08B20D578DB003DFBE2 /* InboxType.swift in Sources */,
-				29EE1C191F3A2EDB0046A54D /* LabelTableCell.swift in Sources */,
 				295B51481FC26F7F00C3993B /* UIImageView+Avatar.swift in Sources */,
 				297B062A1FB9239E0026FA23 /* IGListCollectionViewLayout+GitHawk.swift in Sources */,
 				DCA5ED1D1FAEF9EE0072F074 /* BookmarkCell.swift in Sources */,
@@ -2849,7 +2914,6 @@
 				29A1950A1EC78B4800C3E289 /* NotificationType+Icon.swift in Sources */,
 				29A1950C1EC7901400C3E289 /* NotificationType.swift in Sources */,
 				294AF7F11FC674A400854790 /* CommitDetails.swift in Sources */,
-				29C9FDDD1EC6628200EE3A52 /* NotificationViewModel.swift in Sources */,
 				29D8DF031FBBD72A00C486C2 /* IssueManagingActionModel.swift in Sources */,
 				292CD3D41F0DC12100D3D57B /* PhotoViewHandler.swift in Sources */,
 				294563EE1EE5012900DBCD35 /* PullRequest+IssueType.swift in Sources */,
