@@ -49,6 +49,7 @@ final class BadgeNotifications {
                     callback(.initial)
                 case .denied:
                     callback(.denied)
+                case .provisional: fallthrough
                 case .authorized:
                     callback(isEnabled ? .enabled : .disabled)
                 }
